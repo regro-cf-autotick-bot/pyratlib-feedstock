@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pyratlib/pyratlib-0.5.2.tar.gz
-  sha256: 0232710ba0b3da698a0732cf5552c95a6dd213c5a48e65aa8d41a82e6b0857be
+  url: https://pypi.io/packages/source/p/pyratlib/pyratlib-0.6.2.tar.gz
+  sha256: fb4dfdc6946a3edab24a6325bf1d95a9b353c8fd1639fcf6b0cd2c3c10faac0a
 
 build:
   number: 0
