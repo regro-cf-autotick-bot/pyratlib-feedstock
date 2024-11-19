@@ -1,5 +1,5 @@
 {% set name = "pyratlib" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.7" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pyratlib/pyratlib-0.6.2.tar.gz
-  sha256: fb4dfdc6946a3edab24a6325bf1d95a9b353c8fd1639fcf6b0cd2c3c10faac0a
+  url: https://pypi.io/packages/source/p/pyratlib/{{ name }}-{{ version }}.tar.gz
+  sha256: a6c11a7640e5e5f0012bee584f89d6d1cd21c35e53d161c5727f26166970aaf5
 
 build:
   number: 0
