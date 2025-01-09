@@ -7,24 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pyratlib/pyratlib-0.6.2.tar.gz
+  url: https://pypi.org/packages/source/p/pyratlib/pyratlib-0.6.2.tar.gz
   sha256: fb4dfdc6946a3edab24a6325bf1d95a9b353c8fd1639fcf6b0cd2c3c10faac0a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - python-neo
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.7
+    - python >={{ python_min }}
     - scikit-learn
 
 test:
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pyratlib/pyrat
